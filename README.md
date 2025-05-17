@@ -8,7 +8,7 @@
 - 🏥 Doctor Appointment Booking
 - 💊 Online Medicine Ordering
 - 📄 Drug Information Management System (DIMS)
-- 🛒 Order History & Tracking
+- 🛒 Order History
 - 🔐 User Registration & Authentication
 - 🧑‍⚕️ Admin Panel to Manage Appointments and Orders
 
@@ -42,20 +42,7 @@ MediLink/
 - **Database:** MySQL
 - **Version Control:** Git & GitHub
 
-## 🚀 How to Run
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/fuadahammed101/MediLink.git
-````
-
-2. Place it in your `htdocs` folder (if using XAMPP).
-
-3. Start Apache and MySQL via XAMPP.
-
-4. Create a database named `medilink_db` and import the SQL file.
-
-5. Visit `http://localhost/MediLink` in your browser.
 
 ## 📌 Credits
 
