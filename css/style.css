@@ -1,0 +1,615 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+.navbar {
+  background: #2e7d32;
+  color: white;
+  display:flex ;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: #e8f5e9;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section button {
+  padding: 0.8rem 1.5rem;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-bottom: 1.5rem;
+  color: #2e7d32;
+}
+
+.form-container form input[type="email"],
+.form-container form input[type="password"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-container form button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container form button:hover {
+  background: #27632a;
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  margin: 2rem auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  height: auto;
+}
+
+.slideshow-slide {
+  display: none;
+}
+
+.slideshow-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 0.5rem 1rem;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.6);
+}
+/* Add to your style.css */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+.qty-btn, .delete-btn {
+  background: #2e7d32;
+  color: #fff;
+  border: none;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 4px;
+}
+.qty-btn:hover {
+  background: #388e3c;
+}
+.delete-btn {
+  background: #e53935;
+}
+.delete-btn:hover {
+  background: #b71c1c;
+}
+
+/* Appointment Booking Styles */
+.appointment-booking {
+  max-width: 100%;
+  width: 100%;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  z-index: 10;
+  margin-top: 1.5rem;
+  box-sizing: border-box;
+}
+
+.appointment-booking h2 {
+  margin-bottom: 1rem;
+  color: #2e7d32;
+  text-align: center;
+}
+
+.appointment-booking form label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.appointment-booking form input,
+.appointment-booking form select {
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.appointment-booking form button {
+  width: 100%;
+  padding: 0.6rem;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.appointment-booking form button:hover {
+  background: #27632a;
+}
+
+/* Medicine Products Styles */
+.medicine-products {
+  max-width: 1000px;
+  margin: 3rem auto 5rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.medicine-products h2 {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 2rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+  gap: 1.5rem;
+}
+
+.product-item {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.product-item h3 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.product-item p {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.product-item button {
+  padding: 0.5rem 1rem;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.product-item button:hover {
+  background: #27632a;
+}
+
+.product-item img {
+  max-width: 100%;
+  max-height: 100px;
+  margin-bottom: 0.75rem;
+  object-fit: contain;
+  border-radius: 4px;
+}
+/* Zoom effect on product images */
+.product-item img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.product-item img:hover {
+  transform: scale(1.15);
+  z-index: 2;
+}
+
+/* Doctors Page Styles */
+.doctors-container {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* Slideshow and Appointment Booking Floating Styles */
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1300px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.categories-slideshow-wrapper {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.categories-section {
+  flex: 1 1 180px;
+  min-width: 180px;
+  max-width: 220px;
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+.categories-section h2 {
+  margin-bottom: 1rem;
+  color: #2e7d32;
+  text-align: center;
+}
+
+.categories-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categories-section ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  color: #333;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.categories-section ul li:hover {
+  background-color: #e0f2f1;
+  color: #2e7d32;
+}
+
+.slideshow-container {
+  flex: 3 1 600px;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.slideshow-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.appointment-booking {
+  flex: 1 1 320px;
+  background: rgba(255, 255, 255, 1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  z-index: auto;
+  backdrop-filter: none;
+  box-sizing: border-box;
+  margin-top: 1.5rem;
+}
+
+/* Doctor card styles */
+.doctor-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.doctor-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.doctor-card h3 {
+  margin-bottom: 0.5rem;
+  color: #2e7d32;
+}
+
+.doctor-card p {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.doctor-card button {
+  padding: 0.5rem 1rem;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.doctor-card button:hover {
+  background: #27632a;
+}
+
+/* DIMS Page Styles */
+.dims-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.dims-container h2 {
+  color: #2e7d32;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.dims-container input[type="text"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.dims-container input[type="text"]:focus {
+  border-color: #2e7d32;
+  outline: none;
+}
+
+.medicine-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.medicine-card {
+  background: #e8f5e9;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  color: #2e7d32;
+  box-shadow: 0 2px 8px rgba(46,125,50,0.2);
+  cursor: default;
+  transition: background-color 0.3s ease;
+}
+
+.medicine-card:hover {
+  background-color: #c8e6c9;
+}
+
+/* Drug Info Table Styles */
+.drug-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  text-align: left;
+  color: #333;
+}
+
+.drug-info-table thead tr {
+  background-color: #2e7d32;
+  color: white;
+}
+
+.drug-info-table th, .drug-info-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem 1rem;
+  vertical-align: top;
+}
+
+.drug-info-table tbody tr:nth-child(even) {
+  background-color: #f4f6f8;
+}
+
+.drug-info-table tbody tr:hover {
+  background-color: #e8f5e9;
+  cursor: default;
+}
+
+.nav-links li a {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #a5d6a7; /* lighter green for hover */
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .main-wrapper {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  .slideshow-container {
+    flex: 2 1 100%;
+  }
+  .appointment-booking {
+    flex: 1 1 100%;
+    margin-top: 1rem;
+  }
+  .categories-section {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .nav-links li {
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .main-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .categories-slideshow-wrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .appointment-booking {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links li a {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+  .appointment-booking {
+    padding: 1rem;
+  }
+  .medicine-products {
+    padding: 0 0.5rem;
+  }
+  .products-grid {
+    grid-template-columns: repeat(auto-fill,minmax(140px,1fr));
+    gap: 1rem;
+  }
+}

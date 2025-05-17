@@ -1,0 +1,149 @@
+<?php include 'header.php'; ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediLink - Inspired by Prescripto</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+ 
+
+<body>
+  <div class="dims-container">
+    <h2>Drug Information Management System</h2>
+    <input type="text" id="searchInput" placeholder="Search for medicine...">
+    <table class="drug-info-table" id="drugTable">
+      <thead>
+        <tr>
+          <th>Medicine Name</th>
+          <th>Uses</th>
+          <th>Side Effects</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Paracetamol</td>
+          <td>Pain relief, fever reduction.</td>
+          <td>Liver damage (overuse), allergic reactions.</td>
+        </tr>
+        <tr>
+          <td>Amoxicillin</td>
+          <td>Antibiotic for bacterial infections.</td>
+          <td>Diarrhea, nausea, rash, allergic reactions.</td>
+        </tr>
+        <tr>
+          <td>Ibuprofen</td>
+          <td>Pain relief, anti-inflammatory, fever reduction.</td>
+          <td>Stomach upset, dizziness, ulcers, kidney damage (long-term use).</td>
+        </tr>
+        <tr>
+          <td>Metformin</td>
+          <td>For managing type 2 diabetes.</td>
+          <td>Stomach upset, nausea, diarrhea, lactic acidosis (rare).</td>
+        </tr>
+        <tr>
+          <td>Ciprofloxacin</td>
+          <td>Antibiotic for various infections.</td>
+          <td>Nausea, diarrhea, tendonitis, heart problems (rare).</td>
+        </tr>
+        <tr>
+          <td>Amlodipine</td>
+          <td>For high blood pressure and angina.</td>
+          <td>Swelling, dizziness, headache, low blood pressure.</td>
+        </tr>
+        <tr>
+          <td>Esomeprazole</td>
+          <td>For acid reflux, GERD, ulcers.</td>
+          <td>Headache, diarrhea, nausea, kidney issues (rare).</td>
+        </tr>
+        <tr>
+          <td>Pantoprazole</td>
+          <td>For acid reflux, GERD, ulcers.</td>
+          <td>Headache, nausea, abdominal pain, vitamin B12 deficiency (long-term use).</td>
+        </tr>
+        <tr>
+          <td>Diclofenac</td>
+          <td>Pain relief, anti-inflammatory for arthritis and muscle pain.</td>
+          <td>Stomach pain, ulcers, gastrointestinal bleeding, kidney damage (long-term use).</td>
+        </tr>
+        <tr>
+          <td>Folic Acid</td>
+          <td>For pregnancy support, folate deficiency.</td>
+          <td>Nausea, flatulence (rare), can mask vitamin B12 deficiency.</td>
+        </tr>
+        <tr>
+          <td>Losartan</td>
+          <td>For high blood pressure and heart failure.</td>
+          <td>Dizziness, fatigue, high potassium levels, kidney problems (rare).</td>
+        </tr>
+        <tr>
+          <td>Clopidogrel</td>
+          <td>To prevent blood clots.</td>
+          <td>Bleeding, bruising, severe bleeding (rare), liver problems.</td>
+        </tr>
+        <tr>
+          <td>Salbutamol</td>
+          <td>For asthma and other breathing issues.</td>
+          <td>Shaky hands, increased heart rate, headache, muscle cramps (rare).</td>
+        </tr>
+        <tr>
+          <td>Ranitidine</td>
+          <td>For acid reflux and ulcers.</td>
+          <td>Headache, dizziness, constipation, liver problems (rare).</td>
+        </tr>
+        <tr>
+          <td>Cetirizine</td>
+          <td>For allergies (e.g., hay fever, rashes, sneezing).</td>
+          <td>Drowsiness, dry mouth, headache, allergic reactions (rare).</td>
+        </tr>
+        <tr>
+          <td>Lisinopril</td>
+          <td>For high blood pressure and heart failure.</td>
+          <td>Dizziness, cough, high potassium levels, kidney problems (rare).</td>
+        </tr>
+        <tr>
+          <td>Hydrochlorothiazide</td>
+          <td>Diuretic for high blood pressure and fluid retention.</td>
+          <td>Increased urination, dizziness, dehydration, allergic reactions (rare).</td>
+        </tr>
+        <tr>
+          <td>Fluoxetine</td>
+          <td>For depression, anxiety, OCD.</td>
+          <td>Nausea, sleep disturbances, sexual dysfunction, weight changes, suicidal thoughts (rare).</td>
+        </tr>
+        <tr>
+          <td>Ondansetron</td>
+          <td>For preventing nausea and vomiting (e.g., chemotherapy, surgery).</td>
+          <td>Headache, constipation, dizziness, heart rhythm changes (rare).</td>
+        </tr>
+        <tr>
+          <td>Tamsulosin</td>
+          <td>For enlarged prostate (BPH) to help urination.</td>
+          <td>Dizziness, headache, abnormal ejaculation, low blood pressure (rare).</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    const drugTable = document.getElementById('drugTable');
+    const rows = drugTable.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+
+    searchInput.addEventListener('input', function() {
+      const filter = this.value.toLowerCase();
+      for (let i = 0; i < rows.length; i++) {
+        const medicineName = rows[i].getElementsByTagName('td')[0].textContent.toLowerCase();
+        if (medicineName.indexOf(filter) > -1) {
+          rows[i].style.display = '';
+        } else {
+          rows[i].style.display = 'none';
+        }
+      }
+    });
+  </script>
+</body>
+</html>

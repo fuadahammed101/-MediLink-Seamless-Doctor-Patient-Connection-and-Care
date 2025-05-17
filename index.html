@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediLink - Inspired by Prescripto</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MediLink</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dims.php">DIMS</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="index.php">Login</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Wrapper for Categories, Slideshow and Appointment Booking -->
+  <div class="main-wrapper">
+    <div class="categories-slideshow-wrapper">
+      <!-- Categories Section -->
+      <section class="categories-section">
+        <h2>Categories</h2>
+        <ul>
+          <li>Cardiology</li>
+          <li>Dermatology</li>
+          <li>Neurology</li>
+          <li>Pediatrics</li>
+          <li>Orthopedics</li>
+          <li>General Surgery</li>
+          <li>Gynecology</li>
+          <li>ENT</li>
+          <li>Psychiatry</li>
+          <li>Endocrinology</li>
+        </ul>
+      </section>
+
+      <!-- Slideshow Section -->
+      <section class="slideshow-container">
+        <div class="slideshow-slide fade">
+          <img src="images/d.jpg" alt="Slide 1">
+        </div>
+        <div class="slideshow-slide fade">
+          <img src="images/d3.jpg" alt="Slide 2">
+        </div>
+        <div class="slideshow-slide fade">
+          <img src="images/d4.jpg" alt="Slide 3">
+        </div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+      </section>
+
+      <!-- Appointment Booking Section -->
+      <section class="appointment-booking">
+        <h2>Book an Appointment</h2>
+        <form id="appointmentForm" method="POST" action="appointment_handler.php">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="category">Category:</label>
+          <select id="category" name="category" required>
+            <option value="" disabled selected>Select a category</option>
+            <option value="Cardiology">Cardiology</option>
+            <option value="Dermatology">Dermatology</option>
+            <option value="Neurology">Neurology</option>
+            <option value="Pediatrics">Pediatrics</option>
+            <option value="Orthopedics">Orthopedics</option>
+            <option value="General Surgery">General Surgery</option>
+            <option value="Gynecology">Gynecology</option>
+            <option value="ENT">ENT</option>
+            <option value="Psychiatry">Psychiatry</option>
+            <option value="Endocrinology">Endocrinology</option>
+          </select>
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required>
+
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required>
+
+          <button type="submit">Book Appointment</button>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <!-- Medicine Products Section -->
+  <section class="medicine-products">
+    <h2>Available Medicines</h2>
+    <div class="products-grid">
+      <!-- Product items here -->
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 MediLink. All rights reserved.
+  </footer>
+</body>
+</html>

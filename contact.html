@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - MediLink</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .contact-container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .contact-container h1 {
+      text-align: center;
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+    .contact-info p {
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+    .contact-info p span {
+      font-weight: bold;
+    }
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    form input, form button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-size: 1em;
+    }
+    form button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MediLink</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dims.html">DIMS</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-container">
+      <h1>Contact Us</h1>
+      <div class="contact-info">
+        <p>Have a question or feedback? We’d love to hear from you!</p>
+        <p>📧 <span>Email:</span> support@medilink.com</p>
+        <p>📞 <span>Phone:</span> +880-123-456-789</p>
+        <p>📍 <span>Address:</span><br/>
+          3rd Floor, HealthTech Tower<br/>
+          Dhanmondi, Dhaka, Bangladesh
+        </p>
+        <p>Let us know how we can assist you in your healthcare journey with MediLink!</p>
+      </div>
+
+      <h2>Book a Call</h2>
+      <form id="bookCallForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required />
+
+        <button type="submit">Book Call</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 MediLink. All rights reserved.
+  </footer>
+</body>
+</html>
