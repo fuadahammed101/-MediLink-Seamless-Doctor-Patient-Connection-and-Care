@@ -19,7 +19,7 @@
 - **Backend:** PHP, MySQL
 - **Database:** MySQL
 - **Version Control:** Git & GitHub
-Live link: [Realme C75](https://fuadahammed101.github.io/-MediLink-Seamless-Doctor-Patient-Connection-and-Care/)
+Live link: https://fuadahammed101.github.io/-MediLink-Seamless-Doctor-Patient-Connection-and-Care/
 
 
 ## 📌 Credits
