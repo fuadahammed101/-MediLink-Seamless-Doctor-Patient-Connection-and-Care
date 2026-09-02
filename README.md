@@ -19,8 +19,7 @@
 - **Backend:** PHP, MySQL
 - **Database:** MySQL
 - **Version Control:** Git & GitHub
-Live link: https://fuadahammed101.github.io/-MediLink-Seamless-Doctor-Patient-Connection-and-Care/
-https://medilink.wuaze.com/
+
 
 
 ## 📌 Credits
